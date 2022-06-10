@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <section>
+        <form action="/api/shorturl" method="post">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url">URL:</label>
+            <input type="text" name="url" value="https://www.google.com"/>
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+      <div class="shortExample">
+        <span>This should Redirect you to google.com - </span>
+        <a href="http://localhost:3000/api/shorturl/2">/api/shorturl/2</a>
+      </div>
+    </main>
+    <footer>
+      <p>A Project by Harixh Kumawat</p>
+    </footer>
+  </body>
+</html>
